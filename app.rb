@@ -8,9 +8,9 @@ get('/') do
 end
 
 get('/word_count') do
-  @input_phrase = params.fetch('input_phrase')
-  @input_word = params.fetch('input_word')
-  @output = (@input_word).word_count(@input_phrase)
+  @phrase = params.fetch('phrase')
+  @word = params.fetch('word')
+  @output = (@word).word_count(@phrase)
   if (@output == 1)
     @times = 'time.'
   else
