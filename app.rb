@@ -12,9 +12,9 @@ get('/word_count') do
   @word = params.fetch('word')
   @output = (@word).word_count(@phrase)
   if (@output == 1)
-    @times = 'time.'
+    @times = 'time'
   else
-    @times = 'times.'
+    @times = 'times'
   end
   erb(:index)
 end
