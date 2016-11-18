@@ -3,8 +3,8 @@ class String
     phrase_array = phrase.split(" ")
     target_word = self
     counter = 0
-    phrase_array.each() do |word|
-      if word == target_word
+    phrase_array.each() do |words|
+      if words == target_word
         counter += 1
       end
     end
