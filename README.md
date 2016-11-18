@@ -1,24 +1,24 @@
 # _Word Count_
 
-#### Web app that return how frequently a word appears in a given string, Nov.18,2016
+#### Web app that returns how frequently a word appears in a given string
+#### Nov. 18,2016
 
 #### By **Eric Bomblatus**
 
 ## Description
 
 _Specifications_
-* Allows user to input any given sentence or phrase
-* Allows user to input any given word within the sentence or phrase
-* Function will return how frequently the inputted word appears
+* Allows user to input any sentence or phrase
+* Allows user to input any word within the sentence or phrase
+* Function will the frequency of inputted word
 * Does not account for partial words or punctuation
 
 ## Setup/Installation Requirements
 
 * Clone this repository
 * Install latest version of Ruby
-* In your terminal, open repository to view contents
 * Run `$ bundle`
-* Run `ruby app.rb` to run Sinatra
+* Run `$ ruby app.rb`
 * Navigate to http://localhost:4567/ in your web browser
 * You may also view it on Heroku at:
 
