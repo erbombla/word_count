@@ -24,7 +24,8 @@ _Specifications_
 
 ## Known Bugs
 
-No known bugs
+* Returns 0 when punctuation is included
+* Returns 0 when inputted word is either lowercase or uppercase
 
 ## Support and contact details
 
