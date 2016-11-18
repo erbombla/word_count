@@ -6,3 +6,15 @@ also_reload('./lib/**/*.rb')
 get('/') do
   erb(:index)
 end
+
+get('/layout') do
+  @input_phrase = params.fetch.('input_phrase')
+  @input_word = params.fetch.('input_word')
+  @output = @input_word.word_count(@input_phrase)
+  if (@output == 1)
+    @times = 'time.'
+  else
+    @times = 'times.'
+  end 
+  erb(:layout)
+end
