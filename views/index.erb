@@ -1,0 +1,33 @@
+<h1 class = "jumbotron"> WORD COUNT </h1>
+
+<form action="/word_count">
+  <div class = "form=group">
+    <label for="input_phrase">Enter a phrase</label>
+    <input type="text" name="input_phrase" class="form-control">
+    <br>
+    <label for="input_word">Enter a sentence</label>
+    <input type="text" name="input_word" class="form-control">
+  </div>
+  <button type="submit" name="button" class="btn btn-primary">Submit</button>
+</form>
+
+<div>
+  <h3>Phrase Suggestions</h3>
+    <ul>
+      <li>How much wood would a wood chuck chuck?</li>
+      <li>One fish two fish red fish blue fish</li>
+      <li>A friend in need is a friend indeed</li>
+      <li>A penny saved is a penny earned</li>
+      <li>See no evil, hear no evil, speak no evil<li>
+      <li>You can lead a horse to water, but you cannot make it drink</li>
+    </ul>
+</div>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Your word appears</h3>
+    </div>
+      <div class="panel-body">
+        <center><h3><%= @output %> <%= @times %></h3></center>
+      </div>
+  </div>

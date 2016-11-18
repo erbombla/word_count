@@ -10,7 +10,7 @@
 _Specifications_
 * Allows user to input any sentence or phrase
 * Allows user to input any word within the sentence or phrase
-* Function will the frequency of inputted word
+* The fsunction will count the frequency of the inputted word
 * Does not account for partial words or punctuation
 
 ## Setup/Installation Requirements
