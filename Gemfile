@@ -1,7 +1,7 @@
 source('https://rubygems.org')
 
 gem('sinatra')
-gem('sintra-contrib')
+gem('sinatra-contrib')
 gem('rspec')
 gem('capybara')
 gem('pry')
