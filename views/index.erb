@@ -1,4 +1,9 @@
-<h1> WORD COUNT </h1>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">Word Count</h1>
+    <p>Counts the frequency of any given word within a phrase</p>
+  </div>
+</div>
 
 <form action="/word_count">
   <div class = "form-group">
@@ -8,9 +13,13 @@
     <label for="word">Enter a word within your phrase</label>
     <input type="text" name="word" class="form-control" placeholder="Word">
   </div>
+
   <br>
-  <button type="submit" name="button" class="btn btn-primary">Submit</button>
+
+  <button type="submit" class="btn btn-default" type="submit" name="button">Submit &raquo;></button>
 </form>
+
+<br>
 
 <div>
   <h4>Phrase Suggestions</h4>
@@ -19,16 +28,19 @@
       <li>One fish two fish red fish blue fish</li>
       <li>A friend in need is a friend indeed</li>
       <li>A penny saved is a penny earned</li>
-      <li>See no evil, hear no evil, speak no evil</li>
+      <li>If Peter Piper picked a peck of pickled peppers, where's the peck of pickled peppers Peter Piper picked?</li>
       <li>You can lead a horse to water, but you cannot make it drink</li>
     </ul>
 </div>
 
-  <div class="panel panel-primary">
+<br>
+
+  <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title">Your word appears</h3>
+      <h4 class="panel-title">Your phrase: <%= @phrase %> </h4>
     </div>
       <div class="panel-body">
-        <h4><%= @output %> <%= @times %></h4></center>
+        <p>Your word: <%=@word %></p>
+        <p>Frequency: <%= @output %> <%= @times %></p>
       </div>
   </div>
