@@ -20,7 +20,7 @@ _Specifications_
 * Run `$ bundle`
 * Run `$ ruby app.rb`
 * Navigate to http://localhost:4567/ in your web browser
-* You may also view it on Heroku at:
+* You may also view it on Heroku [here](https://floating-plateau-43323.herokuapp.com/)
 
 ## Known Bugs
 
